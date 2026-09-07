@@ -40,11 +40,11 @@ Jazzmine Pools
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Jellycat Home
-  <img src="jellycat/readme-images/jellycat-home.png" width="375px" alt="Homepagina van Jellycat knuffels">
+  <img src="readme-images/jellycat-home.png" width="375px" alt="Homepagina van Jellycat knuffels">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="jellycat/readme-images/jellycat-detail.png" width="375px" alt="detail pagina van Jellycat. Personaliseer je konijnenknuffel.">
+  <img src="readme-images/jellycat-detail.png" width="375px" alt="detail pagina van Jellycat. Personaliseer je konijnenknuffel.">
  
 </details>
 
