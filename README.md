@@ -56,7 +56,36 @@ Jazzmine Pools
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+
+Visuele beperkingen 
+
+Low contrast: Ondanks de hoge contrasten op de website is het met een low contrast disability moeilijker om de tekst te lezen. 
+
+Color (geel): Met een color disability is de website goed te zien. De gebruiker ziet de website alleen in een andere tint. Wit wordt geel en andere kleuren worden ook aangepast. 
+
+Wanneer de gebruiker een slechte motoriek heeft is het lastiger om te scrollen. Het gebeurd ook vaak dat je perongeluk iets aanklikt wat niet de bedoeling is. 
+
+Screenreader test
+
+De screenreader van Apple herhaalt veel, waardoor het vervelend is om ernaar te luisteren. De website heeft zelf een accesability knop waar je allerlei instellingen kan aanpassen. Zo kan je op drie verschillende manieren navigeren: met je eigen stem, de screenreader van de laptop en de ingebouwde screenreader van de website. Ook kan je de kleuren en de tekst op verschillende manieren aanpassen waardoor de site voor vele beperkingen toegankelijk kan zijn. De snelheid en pitch van de stem kan ook aangepast worden. 
+
+Na dat de screenreader van Apple mij hoofdpijn heeft gegeven ben ik overgestapt naar de screenreader van de website zelf. Deze geeft goed de headings en linkjes aan, maar beschrijft geen foto's. De alt van de foto's hebben dezelfde naam als het product zelf, waardoor het niet heel duidelijk is wat er te zien is. 
+
+Wanneer ik in een carrousel zit met hun screenreader blijft de screenreader de gehele carrousel keer op keer herhalen. Hierdoor is het moeilijker om de site verder te horen. Pas na dat het de tweede keer heeft herhaalt kan je verder met het luisteren wat er op de rest van de site staat. 
+
+Er wordt geen gebruik gemaakt van ul en dan li, maar een article met daarin linkjes.
+
+  <img src="readme-images/checklist1.jpeg" width="375px" alt="checklist pagina 1.">
+
+  <img src="readme-images/checklist2.jpeg" width="375px" alt="checklist pagina 2.">
+
+  <img src="readme-images/checklist3.jpeg" width="375px" alt="checklist pagina 3.">
+
+  <img src="readme-images/checklist4.jpeg" width="375px" alt="checklist pagina 4.">
+
+  <img src="readme-images/checklist4.jpeg" width="375px" alt="checklist pagina 4.">
+
+  <img src="readme-images/checklist5.jpeg" width="375px" alt="checklist pagina 5.">
 
 </details>
 
@@ -68,13 +97,11 @@ Jazzmine Pools
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownschets2.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
