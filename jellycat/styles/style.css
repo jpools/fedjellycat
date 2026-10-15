@@ -15,22 +15,494 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#2c2a29;
+	--color-background:#ffffff;
 	--font-main: "Plus Jakarta Sans", sans-serif;
+	  font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
 
+
+	
 
 }
+
+
+/* Header Nav Style */
+
+header > a {
+	text-decoration: none;
+	background-color: #f5f5f5;
+	color: var(--color-text);
+  font-size: 0.75rem;
+
+	display: flex;
+	align-items: center;
+	padding: 0.75rem;
+	justify-content: center;
+	align-items: center;
+
+}
+
+header nav ul{
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+		list-style: none;
+}
+
+header nav li {
+	margin: 0;
+}
+
+header nav li + li {
+    margin-left: 1rem;
+}
+
+header nav button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
+header nav button:nth-of-type(2) {
+    margin-left: 0.5rem;
+}
+
+header nav a {
+    margin-left: 0.5rem;
+}
+
+header nav a img {
+    width: 8.125rem;
+    height: 3.125rem;
+		align-items: center;
+}
+
+
+
+header nav button:nth-of-type(3),
+header nav button:nth-of-type(4),
+header nav button:nth-of-type(5) {
+    margin-left: 0.75rem;
+}
+
+header img{
+width: 100%;
+height: 25rem;
+object-fit: cover;
+}
+
+
 
 body {
   font-family: var(--font-main);
   color: var(--color-text);
   background-color: var(--color-background);
+	margin: 0;
+	padding: 0;
+
+}
+
+h1, h2,h3,h4,h5,h6 {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top:3rem;
+  margin-bottom: 1.5rem;
+
+	font-size:1.5rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem;;
+}
+
+.button{
+  border: 0.10rem solid;
+  color: var(--color-text);
+
+	margin: 1rem auto;
+  padding: 1rem 2.25rem;
+  text-align: center;
+  text-decoration: none;
+	cursor: pointer;
+
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  font-size: 0.875rem;
+
+	width: 20rem;
+	height: 3rem;
+}
+
+header {
+	background-color: #ffffff;
+
+}
+
+/* Tweede Section Header */
+
+header section:nth-of-type(2) {
+ 
+  background-color: #F5F5F5;
+  padding-bottom: 2rem;
+
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Article Styles */
+
+article img {
+	width: 10rem;
+	height: 10rem;
+}
+
+/* Amusables Section 2 */
+
+main section:nth-of-type(2) img {
+  align-items: center;
+  max-width: 100%;
+  height: 30rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+
+main section:nth-of-type(2) a
+{
+  align-items: center;
+  color: var(--color-text);
+
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+main section:nth-of-type(2) a h4{
+
+  font-weight: 200;
+  font-size: 0.875rem;
+  padding: 0;
+
+}
+
+/* Three Bunnies Section 3 */
+
+main section:nth-of-type(3) img {
+  align-items: center;
+  max-width: 100%;
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+/* object fit zorgt ervoor dat afbeelding niet meeschaalt  */
+
+main section:nth-of-type(3) {
+  background-color: #F5F5F5;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+
+/* JellyCat Awaits Section 4 */
+
+main section:nth-of-type(4) img {
+  align-items: center;
+  max-width: 100%;
+  height: 20rem;
+  width: 16rem;
+  object-fit: cover;
+}
+
+
+
+main section:nth-of-type(4) article img {
+  display: block;
+  margin-inline: auto;
+  
+}
+
+
+/* Titel en P */
+
+main section:nth-of-type(4) h3 {
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+ main section:nth-of-type(4) p {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0rem;
+}
+
+main section:nth-of-type(4) a h4 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+main section:nth-of-type(4) a {
+    color: var(--color-text);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+.explore-button {
+  display: block;
+  margin: 0 auto;
+
+  text-align: center;
+  background-color: #33cee5;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  padding: 1rem 2.25rem;
+  margin-bottom: 2rem;
+  width: 13rem;
+  height: 3.75rem;
+
+  
+  
+}
+
+/* JellyCat Purrks Section 5 */
+
+main section:nth-of-type(5) img:nth-of-type(1) {
+
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  align-items: center;
+
+  height: 28.124rem;
+  width: 22.708rem;
+  
+}
+
+main section:nth-of-type(5) img:nth-of-type(2) {
+
+  display: block;
+  margin: 0 auto;
+
+
+  align-items: center;
+
+  height: 3.213rem;
+  width: 19.374rem;
+  
+}
+
+main section:nth-of-type(5) h4 {
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  line-height: 1.75rem;
+  margin: 2rem;
+  margin-top: 0.5rem;
+  text-align: left;
+
+}
+
+main section:nth-of-type(5) a {
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  padding-top: 1rem;
+  margin: 2rem;
+  margin-top: 0.5rem;
+
+  text-align: left;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 1px;
+
+}
+
+/* JellyCat On Instagram Section 6 */
+
+
+main section:nth-of-type(6) h4 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin: 2.5rem;
+  padding-top: 2.5rem;
+
+  text-align: center;
+
+}
+
+main section:nth-of-type(6) img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  align-items: center;
+
+  height: 16.458rem;
+  width: 9.875rem;
+  
+}
+
+main section:nth-of-type(6) a {
+  display: block;
+  margin: 0 auto;
+  background-color: #33cee5;
+  color: var(--color-text);
+  text-decoration: none;
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 1rem 2.25rem;
+  margin-bottom: 2rem;
+
+  width: 13rem;
+  height: 3.75rem;
 
 }
 
 
 
-svg {
-	fill: black;
+
+
+
+
+/* Footer Styles */
+section h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem;
+  padding-left: 1.25rem;
 }
+
+footer {
+  background-color: #33cee5;
+  padding: 1rem;
+
+}
+
+footer img {
+	width: 2rem;
+	height: 2rem;
+
+ 	display: inline-block;
+
+
+}
+
+footer ul a {
+	text-decoration: none;
+	color: var(--color-text);
+	cursor: pointer;
+	list-style: none;
+  font-weight: 300;
+}
+
+footer ul {
+  font-size: 0.875rem;
+	list-style: none;
+  padding-left:2.5rem;
+  line-height: 2rem;
+
+}
+
+footer section form {
+  border-bottom: 1px solid white;
+  padding: 1rem 0;
+}
+
+footer select option {
+    color: black;
+    background-color: white;
+}
+/* label choose country */
+footer select {
+    background-color: white;
+    color: black;
+    border: none;
+
+    width: 12.625rem;
+    height: 2.125rem;
+
+    cursor: pointer;
+    font:inherit;
+    font-weight: 300;
+
+    margin-left: 2.5rem;
+}
+
+
+
+
+
+/* breadcrumbs 2e pagina*/
+
+.breadcrumb ol {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+
+		font-size: 0.10rem;
+}
+
+.breadcrumb a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
