@@ -1,0 +1,571 @@
+/**************/
+
+/* CSS REMEDY */
+
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;
+}
+
+/*********************/
+
+/* CUSTOM PROPERTIES */
+
+/*********************/
+:root {
+    /* startje */
+    --color-text:#2c2a29;
+    --color-background:#ffffff;
+    --font-main: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Nav Style */
+header > a {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    color: var(--color-text);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+header nav li {
+    margin: 0;
+}
+
+header nav li + li {
+    margin-left: 1rem;
+}
+
+header nav button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
+header nav button:nth-of-type(2) {
+    margin-left: 0.5rem;
+}
+
+header nav a {
+    margin-left: 0.5rem;
+}
+
+header nav a img {
+    width: 8.125rem;
+    height: 3.125rem;
+    align-items: center;
+}
+
+header nav button:nth-of-type(3),
+header nav button:nth-of-type(4),
+header nav button:nth-of-type(5) {
+    margin-left: 0.75rem;
+}
+
+header img{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+header nav {
+  border-bottom: 1px lightgray solid;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2,h3,h4,h5,h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+header p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem;;
+}
+
+.button{
+    border: 0.10rem solid;
+    color: var(--color-text);
+    margin: 1rem auto;
+    padding: 1rem 2.25rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    width: 20rem;
+    height: 3rem;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+/* Tweede Section Header */
+header section:nth-of-type(2) {
+    background-color: #F5F5F5;
+    padding-bottom: 2rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* breadcrumbs 2e pagina*/
+.breadcrumb ol {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+    font-size: 0.688rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+
+}
+
+.breadcrumb a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* BunnyCarrousel */
+
+main > section:first-of-type > section {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    scrollbar-width: none;
+    anchor-name: --product;
+}
+
+main > section:first-of-type > section img {
+    flex: 0 0 min(25rem, 100%);
+    width: 25rem;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: contain;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* Pijltjes */
+
+main > section:first-of-type > section::scroll-button(*) {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    cursor: pointer;
+
+    background-color: white;
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    position: absolute;
+    position-anchor: --product;
+    top: calc(anchor(bottom) - 2rem);
+    transform: none;
+}
+
+main > section:first-of-type > section::scroll-button(left) {
+    content: "" / "Previous";
+    background-image: url("/images/leftarrow.svg");
+    left: calc(anchor(left) + 1rem);
+}
+
+main > section:first-of-type > section::scroll-button(right) {
+    content: "" / "Next";
+    background-image: url("/images/rightarrow.svg");
+    right: calc(anchor(right) + 1rem);
+}
+
+main > section:first-of-type > section::scroll-button(*):disabled {
+    opacity: 0.5;
+}
+
+/* Styling */
+h1 {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin: 2rem;
+}
+
+main > section:first-of-type p {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 20rem;
+}
+
+/* GRID  */
+
+/* Product informatie */
+
+main > section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.75rem 0;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+main > section:first-of-type > * {
+    grid-column: 1 / -1;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Titel */
+
+main > section:first-of-type > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1.5rem 0;
+    overflow-wrap: break-word;
+}
+
+/* Prijs */
+
+main > section:first-of-type > p:nth-of-type(1) {
+    grid-column: 1 / 5;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+}
+
+/* Purrks icoon */
+
+main > section:first-of-type > img:nth-of-type(1) {
+    grid-column: 5 / 7;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-self: end;
+}
+
+/* Earn 330 points */
+
+main > section:first-of-type > p:nth-of-type(2) {
+    grid-column: 7 / 13;
+    font-size: 0.75rem;
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center;
+    white-space: normal;
+}
+
+/* Sterren */
+
+main > section:first-of-type > img:nth-of-type(n+2):nth-of-type(-n+6) {
+    width: 100%;
+    max-width: 1.25rem;
+    height: 1.25rem;
+    justify-self: center;
+}
+
+main > section:first-of-type > img:nth-of-type(2) {
+    grid-column: 2;
+}
+
+main > section:first-of-type > img:nth-of-type(3) {
+    grid-column: 3;
+}
+
+main > section:first-of-type > img:nth-of-type(4) {
+    grid-column: 4;
+}
+
+main > section:first-of-type > img:nth-of-type(5) {
+    grid-column: 5;
+}
+
+main > section:first-of-type > img:nth-of-type(6) {
+    grid-column: 6;
+}
+
+/* Reviews */
+
+main > section:first-of-type > p:nth-of-type(3) {
+    grid-column: 7 / 13;
+    font-size: 0.85rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+    white-space: normal;
+}
+
+/* Meetlint */
+
+main > section:first-of-type > img:nth-of-type(7) {
+    grid-column: 3 / 5;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-self: end;
+}
+
+/* How big am I */
+
+main > section:first-of-type > p:nth-of-type(4) {
+    grid-column: 5 / 12;
+    font-size: 0.875rem;
+    margin: 0;
+    text-decoration: underline;
+    white-space: normal;
+}
+
+/* Formulieren binnen scherm houden */
+
+main > section:first-of-type fieldset,
+main > section:first-of-type input {
+    max-width: 100%;
+    min-width: 0;
+}
+
+
+/* Form 2e pagina */
+main > section:first-of-type > form:first-of-type fieldset {
+    display: grid;
+    grid-template-columns: repeat(5, 3rem);
+    gap: 1rem;
+    border: none;
+    padding: 0;
+    margin: 1rem 0;
+    min-width: 0;
+}
+
+/* Titel */
+
+main > section:first-of-type > form:first-of-type legend {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Radio buttons verbergen */
+
+main > section:first-of-type > form:first-of-type input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+/* Kleurenvakjes grootte*/
+
+main > section:first-of-type > form:first-of-type label {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* Kleuren */
+
+.colour-pink {
+    background-color: #DC8699;
+}
+
+.colour-blue {
+    background-color: #9BB8D4;
+}
+
+.colour-brown {
+    background-color: #B3A384;
+}
+
+.colour-cream {
+    background-color: #F1E9DD;
+}
+
+.colour-gray {
+    background-color: #BFC1C1;
+}
+
+/* Rand bij geselecteerde kleur */
+
+main > section:first-of-type > form:first-of-type input:checked + label,
+main > section:first-of-type > form:first-of-type input:focus-visible + label {
+    outline: 2px solid #565554;
+    outline-offset: 5px;
+}
+
+/* Aanbevolen kleur */
+
+main > section:first-of-type > form:first-of-type + p {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+
+
+
+/* Article Styles */
+article img {
+    width: 10rem;
+    height: 10rem;
+}
+
+article h3 {
+    font-size: 0.875rem;
+    font-weight: 550;
+}
+
+
+/* Footer Styles */
+section h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    padding-top: 1.25rem;
+}
+
+footer {
+    background-color: #33cee5;
+    padding: 1rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: var(--color-text);
+    cursor: pointer;
+    list-style: none;
+    font-weight: 300;
+}
+
+footer ul {
+    margin: 0 auto;
+    font-size: 0.875rem;
+    list-style: none;
+    padding-left:2.5rem;
+    line-height: 2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+
+footer ul:nth-of-type(1) {
+    border-bottom: none;
+}
+
+footer section form {
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+}
+
+footer select option {
+    color: black;
+    background-color: white;
+}
+
+/* label choose country */
+footer select {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 12.625rem;
+    height: 2.125rem;
+    cursor: pointer;
+    font:inherit;
+    font-weight: 300;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer p:nth-of-type(2) {
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+footer section > p:nth-of-type(2) {
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    margin: 2rem 2.5rem;
+}
+
+footer div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer button {
+    background-color: #33cee5;
+    color: var(--color-text);
+    border: none;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-left:2rem;
+}
+
